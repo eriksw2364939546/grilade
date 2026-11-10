@@ -1,4 +1,4 @@
-import "./alpha.scss";
+import "./Alpha.scss";
 import { alpha_bg } from "../../../services/images";
 
 const Alpha = ({ setOpenModal }) => {
