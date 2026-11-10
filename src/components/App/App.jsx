@@ -12,6 +12,7 @@ import PrivacyPolicyPage from "../../modules/PrivacyPolicyPage/PrivacyPolicyPage
 
 import ModalDishDetails from "../../components/ModalDishDetails/ModalDishDetails";
 import ModalCart from "../../components/ModalCart/ModalCart";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 const App = () => {
   // 1. Инициализируем корзину из localStorage
@@ -92,6 +93,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       {/* Шапка сайта */}
       <Header
         setOpenModal={() => setCartModalOpen(true)}

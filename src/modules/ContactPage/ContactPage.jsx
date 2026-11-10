@@ -59,7 +59,7 @@ const ContactPage = () => {
             </ul>
 
             <a
-              href="https://www.google.com/maps/place/Grillade+Chez+Le+Sang/@43.33089,5.4376685,15z/data=!4m6!3m5!1s0x12c9bf003f609b19:0x21ab60d2c52870f6!8m2!3d43.3296534!4d5.4290137"
+              href="https://maps.app.goo.gl/ej18EqhPM3iHnznH9"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-commander"
