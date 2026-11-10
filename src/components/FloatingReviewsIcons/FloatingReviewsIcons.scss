@@ -1,0 +1,38 @@
+.reviews-floating-header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+
+    .floating-icon-item {
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        animation: floatLocalIcons linear infinite;
+        filter: drop-shadow(0 0 4px rgba(255, 102, 0, 0.3));
+    }
+}
+
+@keyframes floatLocalIcons {
+    0% {
+        transform: translateY(20px) translateX(0) scale(0.8) rotate(0deg);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0.35;
+    }
+
+    70% {
+        opacity: 0.35;
+    }
+
+    100% {
+        transform: translateY(-50px) translateX(20px) scale(1) rotate(180deg);
+        opacity: 0;
+    }
+}

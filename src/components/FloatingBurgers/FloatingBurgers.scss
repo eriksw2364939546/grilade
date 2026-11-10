@@ -1,0 +1,45 @@
+.floating-burgers-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Ограничиваем высоту экрана, чтобы бургеры не долетали до футера */
+    height: calc(100vh - 350px);
+    /* 350px — примерная высота футера, можно настроить под себя */
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+
+    .floating-burger {
+        position: absolute;
+        bottom: -80px;
+        opacity: 0.25;
+        animation: floatFullHeight linear infinite;
+    }
+}
+
+/* Анимация полета */
+@keyframes floatFullHeight {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translateY(-40vh) translateX(50px) rotate(180deg);
+    }
+
+    85% {
+        opacity: 0.3;
+    }
+
+    100% {
+        /* Укорачиваем конечную точку движения, так как контейнер теперь короче */
+        transform: translateY(-85vh) translateX(-50px) rotate(360deg);
+        opacity: 0;
+    }
+}

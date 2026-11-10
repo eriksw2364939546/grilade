@@ -1,0 +1,315 @@
+.header {
+    background-color: #09090b;
+    border-bottom: 1px solid #27272a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 12px 0;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-items {
+        width: 100%;
+        position: relative;
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            width: 80px;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+
+        .header-nav {
+            gap: 25px;
+
+            .header-link {
+                color: #e4e4e7;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 500;
+                transition: color 0.2s ease;
+
+                &:hover {
+                    color: #ff6600;
+                }
+            }
+        }
+    }
+
+    /* Десктопные действия */
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+
+        .phone-line {
+            width: 2px;
+            height: 42px;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .header-phone-widget {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: opacity 0.2s ease;
+
+            &:hover {
+                opacity: 0.85;
+            }
+
+            .phone-top {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .phone-icon {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                }
+
+                .phone-number {
+                    font-size: 18px;
+                    font-weight: 800;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            .phone-subtitle {
+                font-size: 12px;
+                color: #d1d5db;
+                font-weight: 400;
+            }
+        }
+    }
+
+    /* Мобильная кнопка телефона */
+    .mobile-phone-btn {
+        display: none;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #18181b;
+        padding: 8px 14px;
+        border-radius: 20px;
+        border: 1px solid #27272a;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: #27272a;
+        }
+
+        .phone-icon {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+        }
+
+        .mobile-phone-number {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+    }
+
+    /* Кнопка бургер */
+    .burger-btn {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1001;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 2.5px;
+            background-color: #f4f4f5;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        &.active {
+            span:nth-child(1) {
+                transform: translateY(8.5px) rotate(45deg);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:nth-child(3) {
+                transform: translateY(-8.5px) rotate(-45deg);
+            }
+        }
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #09090b;
+        border-bottom: 1px solid #27272a;
+        padding: 24px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transform: translateY(-150%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+        &.open {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .mobile-link {
+                color: #e4e4e7;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+
+                &:hover {
+                    color: #ff6600;
+                }
+            }
+        }
+
+        .mobile-actions {
+            display: flex;
+            padding-top: 15px;
+            border-top: 1px solid #27272a;
+
+            .header-btn-order--full {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.cart-header-btn {
+    position: relative;
+    background: transparent;
+    border: 2px solid #ff6600;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff6600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #ff6600;
+        color: #ffffff;
+    }
+
+    .cart-badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: #ff6600;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 700;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #0d0d0f;
+    }
+}
+
+.cart-mobile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Адаптивность при <= 920px */
+@media (max-width: 920px) {
+    .header {
+
+        .header-nav,
+        .header-actions {
+            display: none;
+        }
+
+        .mobile-phone-btn {
+            display: flex;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* Строго по центру по X и Y */
+        }
+
+        .burger-btn {
+            display: flex;
+        }
+    }
+}
+
+/* При <= 550px оставляем только круглую иконку по центру */
+@media (max-width: 550px) {
+    .header {
+        .mobile-phone-btn {
+            padding: 8px;
+            border-radius: 50%;
+
+            .mobile-phone-number {
+                display: none;
+            }
+        }
+    }
+}

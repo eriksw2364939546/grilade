@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=League+Spartan:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Правильный универсальный селектор вместо минуса */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+:root {
+  --text: #656363;
+  --text-h: #D67E34;
+  --bg: rgba(255, 255, 255, 1);
+  --bg2: rgba(229, 229, 229, 1);
+  --btn-bg: #FF7400;
+}
+
+/* Фикс горизонтального скролла.
+   clip не создаёт контейнер прокрутки, поэтому position: sticky работает.
+   Строка с hidden нужна как запасная для старых браузеров. */
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+footer {
+  margin-top: auto;
+}
+
+section {
+  padding: 150px 0 66px 0;
+}
+
+/* Универсальная кнопка COMMANDER */
+.btn-commander {
+  background-color: var(--btn-bg, #FF7400);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-commander:hover {
+  background-color: #e65c00;
+}
+
+.btn-commander:active {
+  transform: scale(0.98);
+}

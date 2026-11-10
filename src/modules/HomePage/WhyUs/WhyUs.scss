@@ -1,0 +1,176 @@
+.why-us-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    color: #18181b;
+    border-top: 1px solid #e4e4e7;
+    border-bottom: 1px solid #e4e4e7;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .why-us-header {
+        text-align: center;
+        margin-bottom: 50px;
+
+        .why-us-subtitle {
+            font-family: "League Spartan", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ff6600;
+            letter-spacing: 1.5px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .why-us-title {
+            font-family: "Cinzel", serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #121214;
+            margin-bottom: 15px;
+
+            @media (max-width: 768px) {
+                font-size: 26px;
+            }
+        }
+
+        .why-us-line {
+            width: 60px;
+            height: 3px;
+            background-color: #ff6600;
+            margin: 0 auto;
+        }
+    }
+
+    .why-us-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 40px;
+
+        @media (max-width: 960px) {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .why-us-card {
+            background-color: #ffffff;
+            border: 1px solid #e4e4e7;
+            border-radius: 4px;
+            /* Установили 4px */
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                border-color: #ff6600;
+                box-shadow: 0 10px 30px rgba(255, 102, 0, 0.1);
+
+                .why-us-icon-wrapper {
+                    background-color: #ff6600;
+                    color: #ffffff;
+                }
+            }
+
+            .why-us-icon-wrapper {
+                width: 70px;
+                height: 70px;
+                background-color: rgba(255, 102, 0, 0.1);
+                color: #ff6600;
+                border-radius: 4px;
+                /* Изменено с 50% на 4px для единого стиля */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 20px auto;
+                transition: all 0.3s ease;
+            }
+
+            .why-us-card-title {
+                font-family: "Cinzel", serif;
+                font-size: 18px;
+                font-weight: 700;
+                color: #121214;
+                margin-bottom: 12px;
+            }
+
+            .why-us-card-desc {
+                font-family: "PT Serif", serif;
+                font-size: 14px;
+                color: #71717a;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    /* Блок с картой */
+    .why-us-map-container {
+        background-color: #ffffff;
+        border: 1px solid #e4e4e7;
+        border-radius: 4px;
+        /* Установили 4px */
+        overflow: hidden;
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+
+        .map-wrapper {
+            width: 100%;
+            height: 380px;
+            position: relative;
+            background-color: #121214;
+            /* Темный фон при загрузке карты */
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: 0;
+                /* Инвертируем цвета и приглушаем яркость для стильного темного вида */
+                filter: invert(90%) hue-rotate(170deg) sepia(100%) saturate(600%) contrast(115%);
+            }
+        }
+
+        .why-us-cta {
+            padding: 25px 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #e4e4e7;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .why-us-cta-info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #121214;
+                }
+
+                .why-us-cta-phone {
+                    font-size: 15px;
+                    color: #ff6600;
+                    text-decoration: none;
+                    font-weight: 700;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

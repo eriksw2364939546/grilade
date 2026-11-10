@@ -1,0 +1,111 @@
+/* alpha.scss */
+
+/* Основная секция Alpha (Главный баннер) */
+section.alpha {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 85vh; // Используем min-height для правильного масштабирования на любых экранах
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 150px 0 150px 0 !important; // Внутренние отступы сверху/снизу для защиты на мобильных экранах
+
+    @media (max-width: 480px) {
+        padding: 60px 0 200px 0;
+    }
+
+    .alpha-content {
+        max-width: 750px;
+        width: 100%;
+        text-align: left;
+
+        /* Динамическое и плавное масштабирование заголовка под любой экран */
+        .alpha-title {
+            font-family: "Cinzel", serif;
+            font-size: clamp(32px, 5vw, 56px); // Размер автоматически меняется от 32px до 56px
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.15;
+            margin-bottom: 25px;
+            letter-spacing: -0.5px;
+        }
+
+        /* Блок фирменных бейджей */
+        .alpha-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 35px;
+
+            .badge {
+                font-family: "League Spartan", sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ff6600;
+                background-color: rgba(255, 102, 0, 0.1);
+                border: 1px solid rgba(255, 102, 0, 0.4);
+                padding: 6px 14px;
+                border-radius: 4px;
+                letter-spacing: 0.8px;
+                white-space: nowrap; // Предотвращает разрыв слов в бейджах
+
+                @media (max-width: 480px) {
+                    font-size: 11px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        /* Кнопки призыва к действию (CTA) */
+        .alpha-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .btn-alpha {
+                display: inline-flex; // Добавляем inline-flex, чтобы ссылка вела себя как flex-элемент
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 700;
+                padding: 14px 28px;
+                border-radius: 4px;
+                border: 2px solid #ffffff;
+                transition: all 0.2s ease;
+                background-color: transparent;
+                text-align: center;
+                box-sizing: border-box; // Обязательно для корректного расчета паддингов и границ
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    transform: translateY(-2px);
+                }
+            }
+
+            .btn-commander {
+                font-size: 15px;
+                padding: 15px 32px;
+                box-sizing: border-box;
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                width: 100%;
+                gap: 15px;
+
+                .btn-alpha,
+                .btn-commander {
+                    width: 100%;
+                    text-align: center;
+                    padding: 14px 20px;
+                }
+            }
+        }
+    }
+}

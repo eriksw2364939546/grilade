@@ -1,0 +1,14 @@
+.menu-page {
+    position: relative;
+
+    section.menu-page__section {
+        position: relative;
+        padding: 120px 0 70px 0 !important;
+        /* overflow: hidden убран: он ломал position: sticky у вкладок категорий */
+
+        .menu-page__content {
+            position: relative;
+            z-index: 2; // Контент меню поверх бургеров
+        }
+    }
+}

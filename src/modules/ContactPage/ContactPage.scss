@@ -1,0 +1,148 @@
+.contact-page {
+    padding: 120px 0 80px 0;
+    background-color: #ffffff;
+    color: #0d0d0f;
+    width: 100%;
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 50px;
+
+        .contact-subtitle {
+            font-family: "League Spartan", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ff6600;
+            letter-spacing: 1.5px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .contact-title {
+            font-family: "Cinzel", serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #0d0d0f;
+            margin-bottom: 15px;
+
+            @media (max-width: 768px) {
+                font-size: 26px;
+            }
+        }
+
+        .contact-line {
+            width: 60px;
+            height: 3px;
+            background-color: #ff6600;
+            margin: 15px auto;
+        }
+    }
+
+    .contact-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: stretch;
+
+        @media (max-width: 968px) {
+            grid-template-columns: 1fr;
+        }
+
+        .contact-info-card {
+            background-color: #121214;
+            border: 1px solid #27272a;
+            border-radius: 4px;
+            padding: 40px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+            h3 {
+                font-family: "Cinzel", serif;
+                font-size: 22px;
+                color: #ffffff;
+                margin-bottom: 15px;
+            }
+
+            .contact-desc {
+                font-family: "PT Serif", serif;
+                font-size: 14px;
+                color: #a1a1aa;
+                line-height: 1.6;
+                margin-bottom: 30px;
+            }
+
+            .contact-details-list {
+                list-style: none;
+                padding: 0;
+                margin: 0 0 30px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 15px;
+
+                    .icon {
+                        font-size: 20px;
+                    }
+
+                    strong {
+                        display: block;
+                        font-size: 13px;
+                        color: #ff6600;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        margin-bottom: 3px;
+                    }
+
+                    p,
+                    a {
+                        font-size: 15px;
+                        color: #e4e4e7;
+                        text-decoration: none;
+                        transition: color 0.2s;
+                    }
+
+                    a:hover {
+                        color: #ff6600;
+                    }
+                }
+            }
+
+            .btn-commander {
+                display: inline-block;
+                text-align: center;
+                background-color: #ff6600;
+                color: #ffffff;
+                padding: 12px 24px;
+                border-radius: 4px;
+                font-weight: 600;
+                text-decoration: none;
+                transition: background-color 0.2s;
+
+                &:hover {
+                    background-color: #e55b00;
+                }
+            }
+        }
+
+        .contact-map-container {
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid #27272a;
+            min-height: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+            /* Фильтры для перевода обычной карты Google в темную/оранжевую стилистику сайта */
+            iframe {
+                filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);
+            }
+        }
+    }
+}

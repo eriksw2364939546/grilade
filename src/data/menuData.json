@@ -1,0 +1,245 @@
+[
+    {
+        "id": 1,
+        "category": "Grillades & Sandwichs",
+        "name": "Les classiques",
+        "description": "Au choix : Steak, Merguez, Kebab, Nuggets, Tenders, Cordon Bleu, Chiches Kebab. Accompagné de frites.",
+        "price": "8.00",
+        "isPopular": false,
+        "image": "/images/menu/classiques.webp"
+    },
+    {
+        "id": 2,
+        "category": "Grillades & Sandwichs",
+        "name": "Brochettes de poulet",
+        "description": "Au choix : Curry, Paprika, Boursin, Provencal, Miel Moutarde. Accompagnées de frites.",
+        "price": "8.00",
+        "isPopular": true,
+        "image": "/images/menu/brochettes-poulet.webp"
+    },
+    {
+        "id": 3,
+        "category": "Grillades & Sandwichs",
+        "name": "Wok Boeuf (Sandwich)",
+        "description": "Accompagné de frites.",
+        "price": "12.00",
+        "isPopular": false,
+        "image": "/images/menu/wok-boeuf.webp"
+    },
+    {
+        "id": 4,
+        "category": "Grillades & Sandwichs",
+        "name": "Bavette (Sandwich)",
+        "description": "Accompagné de frites.",
+        "price": "12.00",
+        "isPopular": false,
+        "image": "/images/menu/bavette.webp"
+    },
+    {
+        "id": 5,
+        "category": "Burgers",
+        "name": "Cheese Burger",
+        "description": "Accompagné de frites.",
+        "price": "8.90",
+        "isPopular": true,
+        "image": "/images/menu/cheese-burger.webp"
+    },
+    {
+        "id": 6,
+        "category": "Burgers",
+        "name": "Chicken Burger",
+        "description": "Accompagné de frites.",
+        "price": "8.90",
+        "isPopular": false,
+        "image": "/images/menu/chicken-burger.webp"
+    },
+    {
+        "id": 7,
+        "category": "Burgers",
+        "name": "Double Cheese Burger",
+        "description": "Accompagné de frites.",
+        "price": "11.90",
+        "isPopular": false,
+        "image": "/images/menu/double-cheese-burger.webp"
+    },
+    {
+        "id": 8,
+        "category": "Burgers",
+        "name": "Le Prestige Burger",
+        "description": "Oeuf, galette pomme de terre, poivron, oignons confits, tomate, salade, steak haché. Accompagné de frites.",
+        "price": "14.90",
+        "isPopular": true,
+        "image": "/images/menu/prestige-burger.webp"
+    },
+    {
+        "id": 9,
+        "category": "Tacos",
+        "name": "Tacos Simple (1 viande)",
+        "description": "",
+        "price": "9.90",
+        "isPopular": false,
+        "image": "/images/menu/tacos-simple.webp"
+    },
+    {
+        "id": 10,
+        "category": "Tacos",
+        "name": "Tacos Double (2 viandes)",
+        "description": "",
+        "price": "10.90",
+        "isPopular": true,
+        "image": "/images/menu/tacos-double.webp"
+    },
+    {
+        "id": 11,
+        "category": "Tacos",
+        "name": "Tacos Triple (3 viandes)",
+        "description": "",
+        "price": "12.90",
+        "isPopular": false,
+        "image": "/images/menu/tacos-triple.webp"
+    },
+    {
+        "id": 12,
+        "category": "Tacos",
+        "name": "Tacos Deluxe Grillade",
+        "description": "",
+        "price": "12.90",
+        "isPopular": false,
+        "image": "/images/menu/tacos-deluxe.webp"
+    },
+    {
+        "id": 13,
+        "category": "Assiettes",
+        "name": "Assiette 1 viande au choix",
+        "description": "",
+        "price": "13.00",
+        "isPopular": false,
+        "image": "/images/menu/assiette-1-viande.webp"
+    },
+    {
+        "id": 14,
+        "category": "Assiettes",
+        "name": "Assiette 2 viandes au choix",
+        "description": "",
+        "price": "15.50",
+        "isPopular": true,
+        "image": "/images/menu/assiette-2-viandes.webp"
+    },
+    {
+        "id": 15,
+        "category": "Assiettes",
+        "name": "Assiette 3 viandes au choix",
+        "description": "",
+        "price": "18.00",
+        "isPopular": false,
+        "image": "/images/menu/assiette-3-viandes.webp"
+    },
+    {
+        "id": 16,
+        "category": "Assiettes",
+        "name": "Camembert au feu de bois",
+        "description": "",
+        "price": "9.90",
+        "isPopular": true,
+        "image": "/images/menu/camembert.webp"
+    },
+    {
+        "id": 17,
+        "category": "Desserts",
+        "name": "Tiramisu",
+        "description": "",
+        "price": "3.50",
+        "isPopular": false,
+        "image": "/images/menu/tiramisu.webp"
+    },
+    {
+        "id": 18,
+        "category": "Desserts",
+        "name": "Tarte Daim",
+        "description": "",
+        "price": "3.50",
+        "isPopular": false,
+        "image": "/images/menu/tarte-daim.webp"
+    },
+    {
+        "id": 19,
+        "category": "Boissons",
+        "name": "Coca-Cola (33cl)",
+        "description": "",
+        "price": "1.50",
+        "isPopular": false,
+        "image": "/images/menu/coca-cola.webp"
+    },
+    {
+        "id": 20,
+        "category": "Boissons",
+        "name": "Coca-Cola Cherry (33cl)",
+        "description": "",
+        "price": "1.50",
+        "isPopular": false,
+        "image": "/images/menu/coca-cola-cherry.webp"
+    },
+    {
+        "id": 21,
+        "category": "Boissons",
+        "name": "Coca-Cola Zero (33cl)",
+        "description": "",
+        "price": "1.50",
+        "isPopular": false,
+        "image": "/images/menu/coca-cola-zero.webp"
+    },
+    {
+        "id": 22,
+        "category": "Boissons",
+        "name": "Oasis Tropical (33cl)",
+        "description": "",
+        "price": "1.50",
+        "isPopular": false,
+        "image": "/images/menu/oasis-tropical.webp"
+    },
+    {
+        "id": 23,
+        "category": "Boissons",
+        "name": "Orangina (33cl)",
+        "description": "",
+        "price": "1.50",
+        "isPopular": false,
+        "image": "/images/menu/orangina.webp"
+    },
+    {
+        "id": 24,
+        "category": "Boissons",
+        "name": "Ice Tea (33cl)",
+        "description": "",
+        "price": "1.50",
+        "isPopular": false,
+        "image": "/images/menu/ice-tea.webp"
+    },
+    {
+        "id": 25,
+        "category": "Boissons",
+        "name": "Schweppes Agrumes (33cl)",
+        "description": "",
+        "price": "1.50",
+        "isPopular": false,
+        "image": "/images/menu/schweppes-agrumes.webp"
+    },
+    {
+        "id": 26,
+        "category": "Boissons",
+        "name": "Fanta Orange (33cl)",
+        "description": "",
+        "price": "1.50",
+        "isPopular": false,
+        "image": "/images/menu/fanta-orange.webp"
+    },
+    {
+        "id": 27,
+        "category": "Boissons",
+        "name": "Cristaline (33cl)",
+        "description": "",
+        "price": "1.50",
+        "isPopular": false,
+        "image": "/images/menu/cristaline.webp"
+    }
+]

@@ -1,0 +1,86 @@
+/* Features.scss */
+
+.features-section {
+    // background-color: #09090b; // Поддерживаем темную тему сайта
+    padding: 0px 0 20px 0;
+    position: relative;
+    z-index: 2;
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        position: relative;
+        top: -100px;
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+
+            /* Растягиваем третий блок на 2 колонки и центрируем карточку внутри */
+            .feature-card:nth-child(3) {
+                grid-column: 1 / -1;
+                max-width: 50%;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+
+            .feature-card:nth-child(3) {
+                grid-column: span 1;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .feature-card {
+        background-color: #ffffff; // Белые карточки, как на референсе
+        border-radius: 4px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(255, 102, 0, 0.15);
+        }
+
+        .feature-icon-wrapper {
+            margin-bottom: 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            .feature-icon {
+                width: 48px;
+                height: 48px;
+                stroke: #ff6600; // Фирменный оранжевый акцент
+            }
+        }
+
+        .feature-title {
+            font-family: "PT Serif", serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #222222;
+            margin-bottom: 20px;
+            line-height: 1.3;
+
+            .highlight {
+                color: #d67e34; // Теплый оттенок для акцентных слов в заголовке
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+
+        .feature-desc {
+            font-family: "PT Serif", serif;
+            font-size: 15px;
+            color: #656363;
+            line-height: 1.6;
+        }
+    }
+}
